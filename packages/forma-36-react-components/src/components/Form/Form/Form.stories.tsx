@@ -12,17 +12,7 @@ import CheckboxField from '../../CheckboxField';
 function DefaultStory() {
   const [agreeTerms, setTerms] = useState('yes');
   return (
-    <Form
-      onSubmit={action('onSubmit')}
-      spacing={select(
-        'spacing',
-        {
-          Default: 'default',
-          Condensed: 'condensed',
-        },
-        'default',
-      )}
-    >
+    <Form onSubmit={action('onSubmit')}>
       <TextField
         required
         name="nameInput"
